@@ -4,8 +4,8 @@
     </div>
 
     <div class="container">
-        <div class="cta row">
-            <h3> Vuoi sapere di più? Scrivici </h3>
+        <div class="cta row justify-content-between">
+            <h2> Vuoi sapere di più? Scrivici </h2>
 
             <a href="">
                 <button> Contatti </button>

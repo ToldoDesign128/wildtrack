@@ -15,10 +15,10 @@
     <header>
             <nav>
                 <div class="container navbar mt-xs">
-                    <div class="row">
+                    <div class="row justify-content-between">
 
                         <!-- nav link -->
-                        <div class="">
+                        <div class=" col-lg-3">
                             <?php wp_nav_menu(array(
                                 'theme_location'    =>  'header',
                                 'container'         =>  false
@@ -26,8 +26,8 @@
                         </div>
 
                         <!-- logo -->
-                        <div class="logo-nav">
-                            <a href="#">
+                        <div class="col-lg-2 logo-nav">
+                            <a href="<?php echo esc_url_raw(home_url()); ?>">
 
                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133" height="133" viewBox="0 0 133 133"><defs><clipPath id="clip-path">
                                     <rect id="Rettangolo_3" data-name="Rettangolo 3" width="133" height="133" transform="translate(0 0)" fill="#fff"/>
