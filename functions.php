@@ -16,5 +16,10 @@ function Wild_scripts() {
 }
 add_action("wp_enqueue_scripts", "Wild_scripts");
 
+//add Adobe font
+function Adobe_fonts() {
+    wp_enqueue_style( 'Adobe-fonts', 'https://use.typekit.net/cvu7wcg.css', false );
+}
+add_action( 'wp_enqueue_scripts', 'Adobe_fonts' );
 
 ?>

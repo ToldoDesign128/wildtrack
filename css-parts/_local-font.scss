@@ -1,0 +1,33 @@
+
+/* Liberator light */
+@font-face {
+    font-family: 'Liberator';
+    font-style: normal;
+    font-weight: 400;
+    src: url('font/Liberator-Light.ttf');
+    src: local(''),
+         url('font/Liberator-Light.otf') format('otf'), 
+         url('font/Liberator-Light.ttf') format('ttf'),
+  }
+
+  /* Liberator Medium */
+@font-face {
+    font-family: 'Liberator';
+    font-style: normal;
+    font-weight: 600;
+    src: url('font/Liberator-Medium.ttf');
+    src: local(''),
+         url('font/Liberator-Medium.otf') format('otf'), 
+         url('font/Liberator-Medium.ttf') format('ttf'),
+  }
+
+/* Liberator Heavy */
+@font-face {
+    font-family: 'Liberator';
+    font-style: normal;
+    font-weight: 800;
+    src: url('font/Liberator-Heavy.ttf');
+    src: local(''),
+         url('font/Liberator-Heavy.otf') format('otf'), 
+         url('font/Liberator-Heavy.ttf') format('ttf'),
+  }
