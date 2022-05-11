@@ -20,3 +20,9 @@ Version: v1.0
 @import "css-parts/media-query";
 @import "css-parts/local-font";
 
+//Block
+@import "css-parts/block/component";
+@import "css-parts/block/nav";
+@import "css-parts/block/front-page";
+@import "css-parts/block/poster";
+@import "css-parts/block/carousel";

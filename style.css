@@ -41,6 +41,10 @@ li, ol, ul, button, a {
   font-family: "Liberator", sans-serif;
 }
 
+p {
+  font-family: "arial", sans-serif;
+}
+
 h1, h2, h3 {
   font-weight: 700;
   text-transform: uppercase;
@@ -62,7 +66,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 120%;
 }
 
@@ -79,6 +83,10 @@ li, ol, ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-size: 2rem;
 }
 
 /*--------------------------------------------------
@@ -159,4 +167,167 @@ BOOTSTRAP MEDIA-QUERIES 2021
   font-weight: 800;
   src: url("font/Liberator-Heavy.ttf");
   src: local(""), url("font/Liberator-Heavy.otf") format("otf"), url("font/Liberator-Heavy.ttf") format("ttf");
+}
+
+button {
+  padding: 1.2rem 2.4rem;
+  border: 0;
+}
+
+.container, .container-fluid {
+  padding: 0;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  margin-top: 2rem;
+}
+
+header .link {
+  height: 100%;
+  padding: 0;
+}
+
+header .link a, header .link li {
+  color: #FEFEFE;
+  font-size: 3rem;
+  line-height: 110%;
+  -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .link a:hover, header .link li:hover {
+  color: #707070;
+}
+
+header .logo {
+  height: 100%;
+  text-align: right;
+}
+
+header .logo svg {
+  height: 10rem;
+}
+
+.hero {
+  height: 90vh;
+  margin: 0;
+  background-color: #707070;
+}
+
+.hero h1 {
+  color: #FEFEFE;
+  margin-top: 30rem;
+  margin-bottom: 10rem;
+  padding: 0;
+}
+
+.hero .elem {
+  padding: 0;
+}
+
+.poster {
+  height: 40rem;
+  margin: 0;
+  padding-top: 5rem;
+  background-color: #3C3C3B;
+}
+
+.poster h2 {
+  color: #FEFEFE;
+  margin-bottom: 8rem;
+}
+
+.poster button {
+  color: #FEFEFE;
+  background-color: #C5AA92;
+  -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.poster button:hover {
+  background-color: #CC5E25;
+}
+
+.carousel {
+  height: 80rem;
+  margin-top: 10rem;
+}
+
+.carousel h2 {
+  color: #FEFEFE;
+}
+
+.carousel button {
+  color: #FEFEFE;
+  background-color: #3C3C3B;
+  -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.carousel button:hover {
+  background-color: #CC5E25;
+}
+
+.carousel .cards {
+  margin-top: 10rem;
+}
+
+.carousel .cards article {
+  height: 45rem;
+  padding: 1rem;
+}
+
+.carousel .cards article:first-child {
+  padding-left: 0;
+}
+
+.carousel .cards article:last-child {
+  padding-right: 0;
+}
+
+.carousel .cards article .card {
+  background-color: #CC5E25;
+  height: 100%;
+}
+
+.carousel .cards article .card .image {
+  height: 25rem;
+}
+
+.carousel .cards article .card .text {
+  height: 20rem;
+  padding: 2rem;
+}
+
+.carousel .cards article .card .text h4, .carousel .cards article .card .text a {
+  font-family: "brandon-grotesque", sans-serif;
+  color: #FEFEFE;
+}
+
+.carousel .cards article .card .text h4 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.carousel .cards article .card .text p {
+  color: #FEFEFE;
+}
+
+.carousel .cards article .card .text .read-more {
+  text-decoration: underline;
+}
+
+.carousel .cards article .card .text .text-content {
+  padding-right: 2rem;
+  position: absolute;
+  bottom: 3rem;
 }

@@ -1,0 +1,16 @@
+.hero{
+    height: 90vh;
+    margin: 0;
+    background-color: $color-grey;
+
+    h1{
+        color: $color-white;
+        margin-top: 30rem;
+        margin-bottom: 10rem;
+        padding: 0;
+    }
+
+    .elem{
+        padding: 0;
+    }
+}

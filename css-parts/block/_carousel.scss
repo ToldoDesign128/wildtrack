@@ -1,0 +1,73 @@
+.carousel{
+    height: 80rem;
+    margin-top: 10rem;
+
+    h2{
+        color: $color-white;
+    }
+
+    button{
+        color: $color-white;
+        background-color: $color-black;
+        transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+        &:hover{
+            background-color: $color-txt-secondary;
+        }
+    }
+
+    .cards{
+        margin-top: 10rem;
+
+        article{
+            height: 45rem;
+            padding: 1rem;
+
+            &:first-child{
+                padding-left: 0;
+            }
+
+            &:last-child{
+                padding-right: 0;
+            }
+
+            .card{
+                background-color: $color-txt-secondary;
+                height: 100%;
+
+                .image{
+                    height: 25rem;
+                }
+                
+                .text{
+                    height: 20rem;
+                    padding: 2rem;
+
+                    h4, a{
+                        font-family: $font-family-primary;
+                        color: $color-white;
+                    }
+                    
+                    h4{
+                        text-transform: uppercase;
+                        margin-bottom: 2rem;
+                    }
+
+                    p{
+                        color: $color-white;
+                    }
+
+                    .read-more{
+                        text-decoration: underline;
+                    }
+
+                    .text-content{
+                        padding-right: 2rem;
+                        position: absolute;
+                        bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
