@@ -14,7 +14,7 @@
 
     <header>
             <nav>
-                <div class="container">
+                <div class="container-fluid">
                     <div class="row justify-content-between navbar">
 
                         <!-- nav link -->

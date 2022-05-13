@@ -1,10 +1,14 @@
 footer{
-    height: 100vh;
+    height: 120vh;
     background-color: $color-txt-secondary;
 
     .cover{
-        height: 30vh;
+        height: 60vh;
         background-color: $color-grey;
+        background-image: url(img/picture/cover.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .cta{
@@ -34,11 +38,12 @@ footer{
     }
 
     .contact{
-        height: 50vh;
-        background-color: $color-grey;
+        height: 40vh;
+        background-color: $color-black;
+        background-image: url(img/element/grana.png);
 
         .contenuti{
-            height: 50vh;
+            height: 40vh;
             align-content: center;
 
             img{

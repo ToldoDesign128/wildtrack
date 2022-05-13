@@ -188,7 +188,7 @@ header {
 }
 
 header .navbar {
-  padding: 0 0 0 15px;
+  padding: 0 4rem;
 }
 
 header .navbar .link {
@@ -222,7 +222,17 @@ header .navbar .logo svg {
 .hero {
   height: 90vh;
   margin: 0;
-  background-color: #707070;
+  background-image: url(img/picture/hero-home.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero .shadow {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 
 .hero h1 {
@@ -265,8 +275,19 @@ header .navbar .logo svg {
 .poster {
   height: 40rem;
   margin: 0;
-  padding-top: 5rem;
   background-color: #3C3C3B;
+  background-image: url(img/picture/poster.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.poster .shadow {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  padding-top: 5rem;
 }
 
 .poster .btn {
@@ -469,13 +490,17 @@ header .navbar .logo svg {
 }
 
 footer {
-  height: 100vh;
+  height: 120vh;
   background-color: #CC5E25;
 }
 
 footer .cover {
-  height: 30vh;
+  height: 60vh;
   background-color: #707070;
+  background-image: url(img/picture/cover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 footer .cta {
@@ -506,12 +531,13 @@ footer .cta a button:hover {
 }
 
 footer .contact {
-  height: 50vh;
-  background-color: #707070;
+  height: 40vh;
+  background-color: #3C3C3B;
+  background-image: url(img/element/grana.png);
 }
 
 footer .contact .contenuti {
-  height: 50vh;
+  height: 40vh;
   -ms-flex-line-pack: center;
       align-content: center;
 }
