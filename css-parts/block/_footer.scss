@@ -1,0 +1,74 @@
+footer{
+    height: 100vh;
+    background-color: $color-txt-secondary;
+
+    .cover{
+        height: 30vh;
+        background-color: $color-grey;
+    }
+
+    .cta{
+        height: 20vh;
+        align-content: center;
+
+        h2{
+            color: $color-white;
+            padding: 0 15px;
+        }
+
+        a{
+            vertical-align: middle;
+
+            button{
+                color: $color-white;
+                background-color: $color-black;
+                transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+                &:hover{
+                    color: $color-black;
+                    background-color: $color-white;
+    
+                }
+            }
+        }
+    }
+
+    .contact{
+        height: 50vh;
+        background-color: $color-grey;
+
+        .contenuti{
+            height: 50vh;
+            align-content: center;
+
+            img{
+                height: 100%;
+            }
+
+            a{
+                height: 100%;
+
+                p{
+                    color: $color-white;
+                    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                    &:hover{
+                        color: $color-txt-secondary;
+                    }
+                }
+
+                h6{
+                    text-decoration: underline;
+                    color: $color-white;
+                    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+                    &:hover{
+                        color: $color-txt-secondary;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

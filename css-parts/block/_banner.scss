@@ -1,0 +1,104 @@
+.banner1{
+    height: 35rem;
+    background-color: $color-black;
+
+    .image{
+        overflow: hidden;
+        height: 35rem;
+        object-fit: contain;
+
+    }
+
+    h2{
+        color: $color-txt-secondary;
+        margin-top: 7rem;
+    }
+
+    .btn{
+        margin-top: 5rem;
+        padding: 0 15px;
+
+        button{
+            color: $color-white;
+            background-color: $color-sfondo;
+            transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:hover{
+                background-color: $color-txt-secondary;
+            }
+        }
+    }
+
+
+}
+
+
+.banner2{
+    height: 35rem;
+    background-color: $color-sfondo;
+
+    .image{
+        overflow: hidden;
+        height: 35rem;
+        object-fit: contain;
+
+    }
+
+    h2{
+        color: $color-txt-secondary;
+        margin-top: 7rem;
+    }
+
+    .btn{
+        margin-top: 5rem;
+        padding: 0 15px;
+
+        button{
+            color: $color-white;
+            background-color: $color-black;
+            transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:hover{
+                background-color: $color-txt-secondary;
+            }
+        }
+    }
+
+
+}
+
+
+.banner3{
+    height: 35rem;
+    background-color: $color-black;
+
+    .image{
+        overflow: hidden;
+        height: 35rem;
+        object-fit: contain;
+
+    }
+
+    h2{
+        color: $color-txt-secondary;
+        margin-top: 7rem;
+        padding: 0 15px;
+    }
+
+    .btn{
+        margin-top: 5rem;
+        padding: 0 15px;
+
+        button{
+            color: $color-white;
+            background-color: $color-sfondo;
+            transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:hover{
+                background-color: $color-txt-secondary;
+            }
+        }
+    }
+
+
+}

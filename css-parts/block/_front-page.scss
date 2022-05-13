@@ -7,10 +7,39 @@
         color: $color-white;
         margin-top: 30rem;
         margin-bottom: 10rem;
-        padding: 0;
     }
+}
 
-    .elem{
-        padding: 0;
+.why{
+
+    .why-content{
+
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        height: 45rem;
+    
+        h2{
+            padding: 0 15px;
+            margin-top: 10rem;
+            color: $color-white;
+        }
+
+        .btn{      
+            margin-top: 5rem;
+
+            button{
+                background-color: $color-black;
+                color: $color-white;
+                transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+                &:hover{
+                    background-color: $color-txt-secondary;
+                }
+            }
+        }
+
+        img{
+            width: 100%;
+        }
     }
 }

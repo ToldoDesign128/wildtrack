@@ -5,30 +5,35 @@ header{
     z-index: 999;
     margin-top: 2rem;
 
-    .link{
-        height: 100%;
-        padding: 0;
+    .navbar{
+        padding: 0 0 0 15px;
 
-        a,li{
-            color: $color-white;
-            font-size: 3rem;
-            line-height: 110%;
-            transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
-
-            &:hover{
-                color: $color-grey;
+        .link{
+            height: 100%;
+            padding: 0;
+    
+            a,li{
+                color: $color-white;
+                font-size: 3rem;
+                line-height: 110%;
+                transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    
+                &:hover{
+                    color: $color-grey;
+                }
+            }
+    
+        }
+    
+        .logo{
+            height: 100%;
+            text-align: right;
+            padding: 0;
+    
+            svg{
+                height: 10rem;
+                width: 10rem;
             }
         }
-
     }
-
-    .logo{
-        height: 100%;
-        text-align: right;
-
-        svg{
-            height: 10rem;
-        }
-    }
-
 }
