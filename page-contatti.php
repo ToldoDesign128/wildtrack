@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero-page">
     <div class="container">
         <div class="row">
             <h1 class="col-lg-10">scrivici per info sulla Prossima escursione</h1>

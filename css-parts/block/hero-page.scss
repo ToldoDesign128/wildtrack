@@ -1,0 +1,16 @@
+.hero-page{
+    background-color: $color-sfondo;
+    height: 90vh;
+    margin: 0;
+
+    h1{
+        color: $color-txt-secondary;
+        margin-top: 20rem;
+        margin-bottom: 2rem;
+    }
+
+    h4{
+        color: $color-black;
+        margin-bottom: 10rem;
+    }
+}

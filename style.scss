@@ -22,9 +22,20 @@ Version: v1.0
 
 //Block
 @import "css-parts/block/component";
-@import "css-parts/block/nav";
-@import "css-parts/block/front-page";
 @import "css-parts/block/poster";
 @import "css-parts/block/carousel";
 @import "css-parts/block/banner";
-@import "css-parts/block/footer";
+@import "css-parts/block/hero-page";
+
+
+//Page
+@import "css-parts/page/nav";
+@import "css-parts/page/footer";
+@import "css-parts/page/front-page";
+@import "css-parts/page/contatti";
+@import "css-parts/page/escursioni";
+@import "css-parts/page/info";
+
+
+
+

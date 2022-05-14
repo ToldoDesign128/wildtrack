@@ -2,7 +2,7 @@
 
 
 <!-- Hero -->
-<section class="hero">
+<section class="hero-page">
     <div class="container">
         <div class="row">
             <h1 class="col-lg-10">QUALE SARà la TUA PROSSIMA AVVENTURA?</h1>
@@ -22,34 +22,67 @@
 
 <!-- Poster -->
 <section class="poster">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10">
-                <h2>SE NON ESISTE POSSIAMO CREARE <br>L’ESCURSIONE GIUSTA per te</h2>
+    <div class="shadow">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>PERCHé con un accompagnatore <br>di media montagna trentino?</h2>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="">
-                <a href="">
-                    <button> ESCURSIONI</button>
-                </a>
+            <div class="row">
+                <div class="btn">
+                    <a href="">
+                        <button> AMMT</button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
 </section>
 
+
 <!-- Cards -->
 <section class="escursioni">
     <div class="container">
         <div class="row">
-            <h2 class="col-lg-9">TUTTE LE PROPOSTE DA PERCORRERE assiemE</h2>
+            <h2 class="col-lg-9">TUTTE LE PROPOSTE <br>DA PERCORRERE assiemE</h2>
         </div>
 
         <!-- loop post -->
-
+        <div class="cards">
+            <div class="row">
+                <?php 
+                    $loop = new WP_Query( array( 
+                        'post_type'         => 'post',
+                        'post_status'       => 'publish',
+                        'orderby'           => 'count',
+                        'order'             => 'DESC',
+                    ) );
+                    if ($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
+                        <article class="col-lg-4">  
+                            <a href="<?php the_permalink();?>" class="">    
+                                <div class="card">              
+                                    <div class="image">
+                                        <img src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php echo $thumbnail_alt ?>">
+                                    </div>
+                                    <div class="text">                                
+                                        <h4 class=""><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+                                        <div class="text-content">
+                                            <p class=""><?php echo get_the_excerpt(); ?></p>
+                                            <a class="read-more" href="<?php the_permalink();?>">Read more...</a>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </a>
+                        </article>
+                        <?php endwhile; ?>
+                    <?php else : ?>
+                        <p> <?php esc_html_e( 'Sorry ma non ci sono post che corrispondono a questo criterio', 'slug-theme' ); ?> </p>
+                <?php endif; ?>
+            </div>
+        </div>
     </div>
-
 </section>
 
 <?php get_footer(); ?>
