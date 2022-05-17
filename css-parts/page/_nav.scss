@@ -3,14 +3,19 @@ header{
     top: 0; left: 0; 
     width: 100%;
     z-index: 999;
-    margin-top: 2rem;
+    overflow-x: hidden;
+    transition: 0.6s all cubic-bezier(0.4, 0.0, 0.2, 1);
 
     .navbar{
         padding: 0 4rem;
+        z-index: 100;
+        margin-top: 2rem;
+        transition: 0.6s all cubic-bezier(0.4, 0.0, 0.2, 1);
 
         .link{
             height: 100%;
             padding: 0;
+            transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
     
             a,li{
                 color: $color-white;
@@ -31,9 +36,92 @@ header{
             padding: 0;
     
             svg{
-                height: 10rem;
-                width: 10rem;
+                top: 0;
+                max-height: 100%;
+                max-width: 100%;
             }
         }
+
+        .menu__hamburger{
+            display: none;
+            transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+
+        .hide{
+            display: none;
+        }
+        .show{
+            display: block;
+        }
+    }
+
+    .pannel{
+        display: none;
+        }
+}
+
+.side{
+    position: fixed;
+    bottom: 20rem;
+    right: 4rem;
+    z-index: 100;
+
+    h5{
+        color: $color-txt-secondary;
+        writing-mode: vertical-rl;
+        font-family: $font-family-secondary;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    header{
+
+        .menu{
+            overflow: hidden;
+        }
+
+        .navbar{
+            padding: 0 2rem;
+    
+            .link{
+                display: none;
+            }
+            .menu__hamburger{
+                display: inline-block;
+            }
+        }
+
+        .pannel{
+            display: block;
+            height: 0;
+            width: 100vw;
+            background-color: $color-txt-secondary;
+            transition: 0.6s all cubic-bezier(0.4, 0.0, 0.2, 1);
+
+            
+            .link__mobile{
+                margin: 30rem 2rem;
+                height: 100%;
+                transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+                a,li{
+                    color: $color-white;
+                    font-size: 5rem;
+                    line-height: 110%;
+                    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                }
+            }
+        }
+
+        .menu--open{
+            height: 120vh;
+            margin-top: -20rem;
+        }
+
+    }
+
+    .side{
+        display: none;
     }
 }

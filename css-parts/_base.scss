@@ -29,6 +29,7 @@ html{
   font-size: 62.5%; /*= 62,5% di 16px = 10px*/
   box-sizing: border-box; /*Include padding and border in the element's total width and height*/
   scroll-behavior: smooth; 
+  overflow-x: hidden;
 }
 
 body{

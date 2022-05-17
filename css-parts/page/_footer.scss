@@ -12,6 +12,7 @@ footer{
     }
 
     .cta{
+        padding: 0 4rem;
         height: 20vh;
         align-content: center;
 
@@ -44,14 +45,26 @@ footer{
 
         .contenuti{
             height: 40vh;
+            padding: 10rem 4rem;
             align-content: center;
 
             img{
-                height: 100%;
+                height: 7rem;
+                object-fit: contain;
             }
 
             a{
-                height: 100%;
+                padding: 0;
+                align-content: center;
+
+                .social{
+                    margin: 0;
+                    padding: 1rem 0;
+                }
+
+                .contatti{
+                    padding: 0;
+                }
 
                 p{
                     color: $color-white;
@@ -70,6 +83,10 @@ footer{
                     &:hover{
                         color: $color-txt-secondary;
                     }
+                }
+
+                br{
+                    height: 1rem;
                 }
             }
 

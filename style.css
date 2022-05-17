@@ -125,6 +125,7 @@ html {
           box-sizing: border-box;
   /*Include padding and border in the element's total width and height*/
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -166,7 +167,7 @@ BOOTSTRAP MEDIA-QUERIES 2021
 }
 
 button {
-  padding: 1.2rem 2.4rem;
+  padding: 1.6rem 3.2rem;
   border: 0;
 }
 
@@ -418,16 +419,24 @@ header {
   left: 0;
   width: 100%;
   z-index: 999;
-  margin-top: 2rem;
+  overflow-x: hidden;
+  -webkit-transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header .navbar {
   padding: 0 4rem;
+  z-index: 100;
+  margin-top: 2rem;
+  -webkit-transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 header .navbar .link {
   height: 100%;
   padding: 0;
+  -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 header .navbar .link a, header .navbar .link li {
@@ -449,8 +458,86 @@ header .navbar .logo {
 }
 
 header .navbar .logo svg {
-  height: 10rem;
-  width: 10rem;
+  top: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+header .navbar .menu__hamburger {
+  display: none;
+  -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+header .navbar .hide {
+  display: none;
+}
+
+header .navbar .show {
+  display: block;
+}
+
+header .pannel {
+  display: none;
+}
+
+.side {
+  position: fixed;
+  bottom: 20rem;
+  right: 4rem;
+  z-index: 100;
+}
+
+.side h5 {
+  color: #CC5E25;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  font-family: "Liberator", sans-serif;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  header .menu {
+    overflow: hidden;
+  }
+  header .navbar {
+    padding: 0 2rem;
+  }
+  header .navbar .link {
+    display: none;
+  }
+  header .navbar .menu__hamburger {
+    display: inline-block;
+  }
+  header .pannel {
+    display: block;
+    height: 0;
+    width: 100vw;
+    background-color: #CC5E25;
+    -webkit-transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.6s all cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  header .pannel .link__mobile {
+    margin: 30rem 2rem;
+    height: 100%;
+    -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  header .pannel .link__mobile a, header .pannel .link__mobile li {
+    color: #FEFEFE;
+    font-size: 5rem;
+    line-height: 110%;
+    -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  header .menu--open {
+    height: 120vh;
+    margin-top: -20rem;
+  }
+  .side {
+    display: none;
+  }
 }
 
 footer {
@@ -468,6 +555,7 @@ footer .cover {
 }
 
 footer .cta {
+  padding: 0 4rem;
   height: 20vh;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -502,16 +590,30 @@ footer .contact {
 
 footer .contact .contenuti {
   height: 40vh;
+  padding: 10rem 4rem;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
 footer .contact .contenuti img {
-  height: 100%;
+  height: 7rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 footer .contact .contenuti a {
-  height: 100%;
+  padding: 0;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+footer .contact .contenuti a .social {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+footer .contact .contenuti a .contatti {
+  padding: 0;
 }
 
 footer .contact .contenuti a p {
@@ -533,6 +635,10 @@ footer .contact .contenuti a h6 {
 
 footer .contact .contenuti a h6:hover {
   color: #CC5E25;
+}
+
+footer .contact .contenuti a br {
+  height: 1rem;
 }
 
 .hero {
