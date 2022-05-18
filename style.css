@@ -89,6 +89,40 @@ button {
   font-size: 2rem;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 5rem;
+    line-height: 100%;
+  }
+  h2 {
+    font-size: 3rem;
+    line-height: 100%;
+  }
+  h3 {
+    font-size: 2.6rem;
+    line-height: 110%;
+  }
+  h4 {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+  h6, p {
+    font-size: 1.6rem;
+    line-height: 160%;
+  }
+  li, ol, ul {
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  button {
+    font-size: 2rem;
+  }
+}
+
 /*--------------------------------------------------
 RESET CSS
 --------------------------------------------------*/
@@ -192,34 +226,57 @@ button {
 .poster .shadow {
   width: 100%;
   height: 100%;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
   padding-top: 8rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url(img/element/wave.png);
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url(img/element/wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.poster .btn {
+.poster .shadow .btn {
   padding: 0 15px;
 }
 
-.poster h2 {
+.poster .shadow h2 {
   color: #FEFEFE;
   margin-bottom: 5rem;
 }
 
-.poster button {
+.poster .shadow button {
   color: #FEFEFE;
   background-color: #C5AA92;
   -webkit-transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.poster button:hover {
+.poster .shadow button:hover {
   background-color: #CC5E25;
+}
+
+@media (max-width: 768px) {
+  .poster {
+    height: 35vh;
+  }
+  .poster .shadow {
+    padding: 6rem 2rem;
+  }
+  .poster .shadow .btn {
+    padding: 0 15px;
+  }
+  .poster .shadow h2 {
+    color: #FEFEFE;
+    margin-bottom: 5rem;
+  }
 }
 
 .carousel {
   height: 80rem;
   margin-top: 10rem;
+}
+
+.carousel article:first-child {
+  margin-left: 8.333333%;
 }
 
 .carousel h2 {
@@ -241,6 +298,11 @@ button {
   margin-top: 10rem;
 }
 
+.carousel .cards .cards__slider {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 .carousel .cards article {
   height: 45rem;
 }
@@ -256,7 +318,7 @@ button {
 }
 
 .carousel .cards article .card .image img {
-  height: 100%;
+  width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -264,7 +326,7 @@ button {
 }
 
 .carousel .cards article .card:hover img {
-  height: 150%;
+  width: 130%;
 }
 
 .carousel .cards article .card .text {
@@ -296,9 +358,86 @@ button {
   bottom: 3rem;
 }
 
+@media (max-width: 768px) {
+  .carousel {
+    height: 80rem;
+    margin-top: 0;
+  }
+  .carousel article {
+    margin: 2rem;
+    padding: 0;
+  }
+  .carousel article:first-child {
+    margin-left: 3.5rem;
+  }
+  .carousel h2 {
+    padding: 6rem 4rem 0 4rem;
+  }
+  .carousel button {
+    margin: 2rem;
+    margin-bottom: 0;
+  }
+  .carousel .cards {
+    margin-top: 4rem;
+  }
+  .carousel .cards .cards__slider {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .carousel .cards article {
+    height: 45rem;
+  }
+  .carousel .cards article .card {
+    background-color: #CC5E25;
+    height: 100%;
+  }
+  .carousel .cards article .card .image {
+    height: 25rem;
+    overflow: hidden;
+  }
+  .carousel .cards article .card .image img {
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .carousel .cards article .card:hover img {
+    width: 130%;
+  }
+  .carousel .cards article .card .text {
+    height: 20rem;
+    padding: 2rem;
+  }
+  .carousel .cards article .card .text h4, .carousel .cards article .card .text a {
+    font-family: "brandon-grotesque", sans-serif;
+    color: #FEFEFE;
+  }
+  .carousel .cards article .card .text h4 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .carousel .cards article .card .text p {
+    color: #FEFEFE;
+  }
+  .carousel .cards article .card .text .read-more {
+    text-decoration: underline;
+  }
+  .carousel .cards article .card .text .text-content {
+    padding-right: 2rem;
+    position: absolute;
+    bottom: 3rem;
+  }
+}
+
 .banner1 {
   height: 35rem;
   background-color: #3C3C3B;
+  background-image: url(img/element/wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .banner1 .image {
@@ -332,6 +471,11 @@ button {
 .banner2 {
   height: 35rem;
   background-color: #C5AA92;
+  background-image: url(img/element/wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .banner2 .image {
@@ -365,6 +509,11 @@ button {
 .banner3 {
   height: 35rem;
   background-color: #3C3C3B;
+  background-image: url(img/element/wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 
 .banner3 .image {
@@ -394,6 +543,30 @@ button {
 
 .banner3 .btn button:hover {
   background-color: #CC5E25;
+}
+
+@media (max-width: 768px) {
+  .banner1, .banner2, .banner3 {
+    height: 40rem;
+    position: relative;
+  }
+  .banner1 .image, .banner2 .image, .banner3 .image {
+    padding: 0;
+    height: 15rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .banner1 h2, .banner2 h2, .banner3 h2 {
+    color: #CC5E25;
+    margin-top: 5rem;
+    padding: 0 3.5rem;
+  }
+  .banner1 .btn, .banner2 .btn, .banner3 .btn {
+    margin: 0 2rem;
+    margin-top: 3rem;
+    padding: 0 15px;
+  }
 }
 
 .hero-page {
@@ -692,6 +865,32 @@ footer .contact .contenuti a br {
 
 .why .why-content img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh;
+  }
+  .hero .shadow {
+    padding: 0 2rem;
+  }
+  .hero .shadow svg {
+    display: none;
+  }
+  .why .why-content {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    height: 45rem;
+  }
+  .why .why-content h2 {
+    padding: 0 3.3rem;
+    margin-top: 2rem;
+    color: #FEFEFE;
+  }
+  .why .why-content .btn {
+    padding: 0 2rem;
+    margin-top: 5rem;
+  }
 }
 
 .escursioni {

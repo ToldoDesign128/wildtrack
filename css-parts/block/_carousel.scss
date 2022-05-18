@@ -2,6 +2,13 @@
     height: 80rem;
     margin-top: 10rem;
 
+    article{
+
+        &:first-child{
+            margin-left:8.333333%
+        }
+    }
+
     h2{
         color: $color-white;
     }
@@ -19,6 +26,10 @@
     .cards{
         margin-top: 10rem;
 
+        .cards__slider{
+            flex-wrap: nowrap;
+        }
+
         article{
             height: 45rem;
 
@@ -31,7 +42,7 @@
                     overflow: hidden;
 
                     img{
-                        height: 100%;
+                        width: 100%;
                         object-fit: contain;
                         transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
                     }
@@ -39,7 +50,7 @@
                 
                 &:hover{
                     img{
-                        height: 150%;
+                        width: 130%;
                     }
                 }
                 
@@ -74,4 +85,95 @@
             }
         }
     }
+}
+
+@media (max-width:768px){
+    .carousel{
+        height: 80rem;
+        margin-top: 0;
+    
+        article{
+            margin: 2rem;
+            padding: 0;
+
+            &:first-child{
+                margin-left:3.5rem;
+            }
+        }
+    
+        h2{
+            padding: 6rem 4rem 0 4rem;
+        }
+
+        button{
+            margin: 2rem;
+            margin-bottom: 0;
+        }
+    
+
+    
+        .cards{
+            margin-top: 4rem;
+    
+            .cards__slider{
+                flex-wrap: nowrap;
+            }
+    
+            article{
+                height: 45rem;
+    
+                .card{
+                    background-color: $color-txt-secondary;
+                    height: 100%;
+    
+                    .image{
+                        height: 25rem;
+                        overflow: hidden;
+    
+                        img{
+                            width: 100%;
+                            object-fit: contain;
+                            transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                        }
+                    }
+                    
+                    &:hover{
+                        img{
+                            width: 130%;
+                        }
+                    }
+                    
+                    .text{
+                        height: 20rem;
+                        padding: 2rem;
+    
+                        h4, a{
+                            font-family: $font-family-primary;
+                            color: $color-white;
+                        }
+                        
+                        h4{
+                            text-transform: uppercase;
+                            margin-bottom: 2rem;
+                        }
+    
+                        p{
+                            color: $color-white;
+                        }
+    
+                        .read-more{
+                            text-decoration: underline;
+                        }
+    
+                        .text-content{
+                            padding-right: 2rem;
+                            position: absolute;
+                            bottom: 3rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }

@@ -1,7 +1,7 @@
 jQuery(document).ready(function(){
     if(window.innerWidth > 769){
         jQuery(window).scroll(function(){
-            if (jQuery(this).scrollTop() > 350) {
+            if (jQuery(this).scrollTop() > 150) {
                 jQuery('#menu').addClass('hide');
             } else {
                 jQuery('#menu').removeClass('hide');
@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
         });
         
         jQuery(window).scroll(function(){
-            if (jQuery(this).scrollTop() > 350) {
+            if (jQuery(this).scrollTop() > 150) {
                 jQuery('#ham').addClass('show');
             } else {
                 jQuery('#ham').removeClass('show');

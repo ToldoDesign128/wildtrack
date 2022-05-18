@@ -26,6 +26,7 @@ function Wild_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'Wild_styles' );
 
+
 //add JS
 function Wild_scripts() {
     wp_enqueue_script("Wild-scriptjs", get_template_directory_uri().'/js/script.js', array("jquery"), null, true);
