@@ -5,7 +5,7 @@
         </div>
 
         <div class="cta row justify-content-between">
-            <h2 class="col-lg-8"> Vuoi sapere di più? Scrivici </h2>
+            <h2 class="col-lg-8"> Vuoi sapere di più?</h2>
             <a href="" class="col-lg-2">
                 <button> Contatti </button>
             </a>
@@ -14,14 +14,14 @@
 
     <div class="contact container-fluid">
         <div class="contenuti row justify-content-between align-items-center">
-            <a href="">
-                <div class="col-12 col-lg-2">
+            <a href="" class="col-12 col-12 col-lg-2">
+                <div>
                     <img src="<?php echo get_template_directory_uri(); ?>\img\logo\logo-footer.png" alt="">
                 </div>
             </a>
 
-            <a href="">
-                <div class="social offset-lg-2 col-lg-2">
+            <a href="" class="social col-2 offset-0 offset-lg-1 col-lg-2">
+                <div>
                     <svg id="Componente_160_1" data-name="Componente 160 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
                         <defs>
                             <clipPath id="clip-path">
@@ -37,14 +37,13 @@
                 </div>
             </a>
 
-
-            <div class="contatti col-lg-4">
+            <div class="contatti col-10 col-lg-4">
                 <a href="tel:3473411518" target="_blank"> <p>Matteo +39 347 3411518</p></a>
                 <br>
                 <a href="mailto:wildtrackvalsugana@gmail.com" target="_blank"> <p>wildtrackvalsugana@gmail.com</p></a>
             </div>
 
-            <div class="link col-lg-3">
+            <div class="link col-12 col-lg-3">
                 <a href=""> <h6> Privacy & Cookies </h6>  </a>
                 <br>
                 <a href="" target="_blank"> <h6> 2022 credits </h6> </a>

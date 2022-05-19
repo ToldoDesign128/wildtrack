@@ -2,15 +2,29 @@
     background-color: $color-sfondo;
     height: 90vh;
     margin: 0;
-
     h1{
         color: $color-txt-secondary;
         margin-top: 20rem;
         margin-bottom: 2rem;
     }
-
     h4{
         color: $color-black;
         margin-bottom: 10rem;
     }
+}
+
+
+@media (max-width: 768px){
+    .hero-page{
+
+        height: 70vh;
+        h1{
+            margin-left: 4rem;
+        }
+        h4{
+            margin-bottom: 10rem;
+            padding: 0 4rem;
+        }
+    }
+
 }

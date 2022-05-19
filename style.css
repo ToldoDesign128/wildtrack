@@ -557,6 +557,11 @@ button {
     bottom: 0;
     right: 0;
   }
+  .banner1 img, .banner2 img, .banner3 img {
+    max-width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .banner1 h2, .banner2 h2, .banner3 h2 {
     color: #CC5E25;
     margin-top: 5rem;
@@ -584,6 +589,19 @@ button {
 .hero-page h4 {
   color: #3C3C3B;
   margin-bottom: 10rem;
+}
+
+@media (max-width: 768px) {
+  .hero-page {
+    height: 70vh;
+  }
+  .hero-page h1 {
+    margin-left: 4rem;
+  }
+  .hero-page h4 {
+    margin-bottom: 10rem;
+    padding: 0 4rem;
+  }
 }
 
 header {
@@ -814,6 +832,54 @@ footer .contact .contenuti a br {
   height: 1rem;
 }
 
+@media (max-width: 768px) {
+  footer {
+    height: 100vh;
+  }
+  footer .cover {
+    height: 40vh;
+  }
+  footer .cta {
+    padding: 0 3rem;
+    height: 20vh;
+  }
+  footer .cta h2 {
+    padding: 4rem 0 2rem 0;
+  }
+  footer .cta a {
+    padding: 0;
+  }
+  footer .cta a button {
+    margin: 0 0 2rem 0;
+  }
+  footer .contact {
+    height: 40vh;
+  }
+  footer .contact .contenuti {
+    height: 40vh;
+    padding: 10rem 4rem;
+  }
+  footer .contact .contenuti img {
+    height: 7rem;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  footer .contact .contenuti a {
+    text-align: center;
+    margin: 2rem 0;
+    padding: 0;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  footer .contact .contenuti a .social {
+    margin: 0;
+    padding: 1rem 0;
+  }
+  footer .contact .contenuti a .contatti {
+    padding: 0;
+  }
+}
+
 .hero {
   height: 90vh;
   margin: 0;
@@ -838,7 +904,7 @@ footer .contact .contenuti a br {
 
 .why .why-content {
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
   height: 45rem;
 }
 
@@ -879,8 +945,9 @@ footer .contact .contenuti a br {
   }
   .why .why-content {
     margin-top: 4rem;
-    margin-bottom: 4rem;
-    height: 45rem;
+    padding-bottom: 4rem;
+    height: 30rem;
+    overflow: hidden;
   }
   .why .why-content h2 {
     padding: 0 3.3rem;
@@ -890,6 +957,10 @@ footer .contact .contenuti a br {
   .why .why-content .btn {
     padding: 0 2rem;
     margin-top: 5rem;
+  }
+  .why .why-content img {
+    margin-top: -10rem;
+    margin-left: 20rem;
   }
 }
 
@@ -904,6 +975,7 @@ footer .contact .contenuti a br {
 
 .escursioni .cards {
   margin-top: 10rem;
+  margin-left: 8.3333%;
 }
 
 .escursioni .cards article {
@@ -959,6 +1031,75 @@ footer .contact .contenuti a br {
   padding-right: 2rem;
   position: absolute;
   bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .escursioni {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+  .escursioni .hero-page {
+    height: 70vh;
+  }
+  .escursioni .hero-page h1 {
+    margin-left: 2rem;
+  }
+  .escursioni .hero-page h4 {
+    margin-bottom: 10rem;
+    padding: 0 4rem;
+  }
+  .escursioni .hero-page svg {
+    display: none;
+  }
+  .escursioni h2 {
+    padding: 0 2rem;
+    color: #FEFEFE;
+  }
+  .escursioni .cards {
+    margin-top: 10rem;
+    margin-left: 8.3333%;
+  }
+  .escursioni .cards article {
+    height: 45rem;
+  }
+  .escursioni .cards article .card {
+    background-color: #CC5E25;
+    height: 100%;
+  }
+  .escursioni .cards article .card .image {
+    height: 25rem;
+    overflow: hidden;
+  }
+  .escursioni .cards article .card .image img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -webkit-transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .escursioni .cards article .card .text {
+    height: 20rem;
+    padding: 2rem;
+  }
+  .escursioni .cards article .card .text h4, .escursioni .cards article .card .text a {
+    font-family: "brandon-grotesque", sans-serif;
+    color: #FEFEFE;
+  }
+  .escursioni .cards article .card .text h4 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .escursioni .cards article .card .text p {
+    color: #FEFEFE;
+  }
+  .escursioni .cards article .card .text .read-more {
+    text-decoration: underline;
+  }
+  .escursioni .cards article .card .text .text-content {
+    padding-right: 2rem;
+    position: absolute;
+    bottom: 3rem;
+  }
 }
 
 .content {
