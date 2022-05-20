@@ -46,7 +46,7 @@
 <section class="escursioni">
     <div class="container-fluid">
         <div class="row">
-            <h2 class="col-lg-9 offset-lg-1">TUTTE LE PROPOSTE <br>DA PERCORRERE assiemE</h2>
+            <h2 class="col-12 col-lg-9 offset-lg-1">TUTTE LE PROPOSTE <br>DA PERCORRERE assiemE</h2>
         </div>
 
         <!-- loop post -->
@@ -60,7 +60,7 @@
                         'order'             => 'DESC',
                     ) );
                     if ($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
-                        <article class="col-lg-3">  
+                        <article class="col-12 col-lg-3">  
                             <a href="<?php the_permalink();?>" class="">    
                                 <div class="card">              
                                     <div class="image">

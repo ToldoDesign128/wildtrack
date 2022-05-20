@@ -1,15 +1,49 @@
 .content{
     padding-top: 10rem;
     padding-bottom: 10rem;
-
+    .banner{
+        padding: 5rem 0;
+    }
     h2{
         color: $color-txt-secondary;
         margin-bottom: 5rem;
     }
-
     p{
         color: $color-black;
         margin-bottom: 5rem;
         padding: 0 15px;
     }
+    img{
+        object-fit: contain;
+        height: 100%;
+        max-width: 100%;
+    }
+    svg{
+        margin-top: 0;
+    }
+}
+
+@media (max-width:768px) {
+
+    .content{
+        padding-top: 6rem;
+        padding-bottom: 6rem;    
+        .banner{
+            padding: 5rem 2rem;
+        }    
+        h2{
+            margin-bottom: 3rem;
+        }    
+        p{
+            padding: 0 15px;
+            margin-bottom: 0;
+        }  
+        svg{
+            margin-top: 3rem;
+        }  
+        img{
+            margin-top: 3rem;
+        }
+    }
+    
 }

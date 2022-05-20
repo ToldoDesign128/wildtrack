@@ -1,7 +1,9 @@
 .hero-page{
+
     background-color: $color-sfondo;
     height: 90vh;
     margin: 0;
+    
     h1{
         color: $color-txt-secondary;
         margin-top: 20rem;
@@ -15,15 +17,20 @@
 
 
 @media (max-width: 768px){
+
     .hero-page{
 
-        height: 70vh;
+        height: 70vh;        
         h1{
-            margin-left: 4rem;
+            margin-left: 2rem;
+            margin-top: 15rem;
         }
         h4{
             margin-bottom: 10rem;
             padding: 0 4rem;
+        }
+        svg{
+            display: none;
         }
     }
 

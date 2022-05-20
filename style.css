@@ -266,7 +266,7 @@ button {
   }
   .poster .shadow h2 {
     color: #FEFEFE;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -385,7 +385,7 @@ button {
         flex-wrap: nowrap;
   }
   .carousel .cards article {
-    height: 45rem;
+    height: 50rem;
   }
   .carousel .cards article .card {
     background-color: #CC5E25;
@@ -596,11 +596,15 @@ button {
     height: 70vh;
   }
   .hero-page h1 {
-    margin-left: 4rem;
+    margin-left: 2rem;
+    margin-top: 15rem;
   }
   .hero-page h4 {
     margin-bottom: 10rem;
     padding: 0 4rem;
+  }
+  .hero-page svg {
+    display: none;
   }
 }
 
@@ -979,7 +983,7 @@ footer .contact .contenuti a br {
 }
 
 .escursioni .cards article {
-  height: 45rem;
+  height: 50rem;
 }
 
 .escursioni .cards article .card {
@@ -1035,76 +1039,28 @@ footer .contact .contenuti a br {
 
 @media (max-width: 768px) {
   .escursioni {
-    padding-top: 15rem;
-    padding-bottom: 15rem;
-  }
-  .escursioni .hero-page {
-    height: 70vh;
-  }
-  .escursioni .hero-page h1 {
-    margin-left: 2rem;
-  }
-  .escursioni .hero-page h4 {
-    margin-bottom: 10rem;
-    padding: 0 4rem;
-  }
-  .escursioni .hero-page svg {
-    display: none;
+    padding: 7rem 2rem;
   }
   .escursioni h2 {
     padding: 0 2rem;
     color: #FEFEFE;
   }
   .escursioni .cards {
-    margin-top: 10rem;
-    margin-left: 8.3333%;
+    margin-top: 6rem;
+    margin-left: 0;
   }
   .escursioni .cards article {
-    height: 45rem;
-  }
-  .escursioni .cards article .card {
-    background-color: #CC5E25;
-    height: 100%;
-  }
-  .escursioni .cards article .card .image {
-    height: 25rem;
-    overflow: hidden;
-  }
-  .escursioni .cards article .card .image img {
-    height: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
-    -webkit-transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
-    transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-  .escursioni .cards article .card .text {
-    height: 20rem;
-    padding: 2rem;
-  }
-  .escursioni .cards article .card .text h4, .escursioni .cards article .card .text a {
-    font-family: "brandon-grotesque", sans-serif;
-    color: #FEFEFE;
-  }
-  .escursioni .cards article .card .text h4 {
-    text-transform: uppercase;
-    margin-bottom: 2rem;
-  }
-  .escursioni .cards article .card .text p {
-    color: #FEFEFE;
-  }
-  .escursioni .cards article .card .text .read-more {
-    text-decoration: underline;
-  }
-  .escursioni .cards article .card .text .text-content {
-    padding-right: 2rem;
-    position: absolute;
-    bottom: 3rem;
+    margin-bottom: 3rem;
   }
 }
 
 .content {
   padding-top: 10rem;
   padding-bottom: 10rem;
+}
+
+.content .banner {
+  padding: 5rem 0;
 }
 
 .content h2 {
@@ -1116,4 +1072,109 @@ footer .contact .contenuti a br {
   color: #3C3C3B;
   margin-bottom: 5rem;
   padding: 0 15px;
+}
+
+.content img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100%;
+  max-width: 100%;
+}
+
+.content svg {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  .content .banner {
+    padding: 5rem 2rem;
+  }
+  .content h2 {
+    margin-bottom: 3rem;
+  }
+  .content p {
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+  .content svg {
+    margin-top: 3rem;
+  }
+  .content img {
+    margin-top: 3rem;
+  }
+}
+
+.single .article-content {
+  padding: 0;
+  margin: 0;
+}
+
+.single .hero-single {
+  background-color: #707070;
+  height: 90vh;
+}
+
+.single .hero-single h1 {
+  color: #FEFEFE;
+  padding: 35rem 0 5rem 0;
+}
+
+.single .hero-content .wp-block-columns {
+  margin-left: 8.333%;
+  margin-right: 3rem;
+}
+
+.single .hero-content .wp-block-columns p {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.single .hero-content .wp-block-columns p:first-child {
+  margin-top: 10rem;
+}
+
+.single .hero-content .wp-block-columns a {
+  margin-left: 8.333%;
+  margin-right: 8.333%;
+  margin-top: 10rem;
+}
+
+.single .hero-content .wp-block-columns .wp-block-button__link {
+  border-radius: 0;
+  padding: 1.6rem 3.2rem;
+  border: 0;
+}
+
+.single .hero-content figure {
+  background-color: #CC5E25;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  padding: 8.333%;
+}
+
+.single .hero-content iframe {
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.single .banner1 {
+  margin-top: -0.3rem;
+}
+
+@media (max-width: 768px) {
+  .single .hero-single {
+    height: 80vh;
+  }
+  .single .hero-single h1 {
+    padding: 35rem 2rem 5rem 2rem;
+  }
+  .single .hero-single svg {
+    display: none;
+  }
 }
