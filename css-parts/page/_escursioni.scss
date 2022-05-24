@@ -7,25 +7,28 @@
     .cards{
         margin-top: 10rem;
         margin-left: 8.3333%;
+
         article{
             height: 50rem;
+            max-width: 30%;
+            margin-bottom: 5rem;
+
             .card{
                 background-color: $color-txt-secondary;
                 height: 100%;
+
                 .image{
                     height: 25rem;
                     overflow: hidden;
                     img{
                         height: 100%;
-                        object-fit: contain;
+                        object-fit: cover;
                         transition: 0.6s all cubic-bezier(0.075, 0.82, 0.165, 1);
+                        &:hover{
+                            height: 150%;
+                        } 
                     }
-                }                
-                &:hover{
-                    img{
-                        height: 150%;
-                    }
-                }                
+                }               
                 .text{
                     height: 20rem;
                     padding: 2rem;
@@ -39,12 +42,13 @@
                     }
                     p{
                         color: $color-white;
+                        margin-bottom: 2rem;
                     }
                     .read-more{
                         text-decoration: underline;
                     }
                     .text-content{
-                        padding-right: 2rem;
+                        padding-right: 3rem;
                         position: absolute;
                         bottom: 3rem;
                     }
@@ -68,6 +72,7 @@
             margin-left: 0;
             article{
                 margin-bottom: 3rem;
+                max-width: 100%;
             }
         }
     }

@@ -1,6 +1,6 @@
 $font-family-primary: 'brandon-grotesque', sans-serif;
 $font-family-secondary: 'Liberator', sans-serif;
-$font-family-text: 'arial', sans-serif;
+$font-family-text: 'Source Sans Pro', sans-serif;
 
 h1, h2, h3{font-family: $font-family-primary;}
 li, ol, ul, button, a{font-family: $font-family-secondary;}
@@ -27,7 +27,12 @@ h3{
 }
 
 h4{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
+    line-height: 120%;
+}
+
+h5{
+    font-size: 2rem;
     line-height: 120%;
 }
 

@@ -29,7 +29,7 @@
             </div>
             <div class="row">
                 <div class="btn offset-lg-1">
-                    <a href="">
+                    <a href="#">
                         <button> Scopri</button>
                     </a>
                 </div>
@@ -42,16 +42,15 @@
 <!-- Single carousel -->
 <section class="carousel">
     <div class="container-fluid">
-        <div class="row align-items-center justify-content-between">
+        <div class="row align-items-center">
             <h2 class=" col-12 col-lg-8 offset-lg-1">TUTTE LE PROPOSTE <br>DA PERCORRERE assiemE</h2>
-            <a href="" class="col-6 col-lg-2 ">
+            <a href="<?php echo get_permalink( get_page_by_path( 'escursioni' ) ); ?>" class="col-6 col-lg-2 ">
                 <button>Escursioni</button>
             </a>
         </div>
     </div>
 
     <section class="cards">
-
         <div class="row cards__slider">
 
             <?php 
@@ -60,10 +59,9 @@
                     'post_status'       => 'publish',
                     'orderby'           => 'count',
                     'order'             => 'DESC',
-                    'posts_per_page'    => 3
                 ) );
                 if ($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
-                    <article class="col-10 col-lg-4">  
+                    <article class="col-12 col-lg-4">  
                         <a href="<?php the_permalink();?>" class="">    
                             <div class="card">              
                                 <div class="image">
@@ -86,6 +84,14 @@
 
         </div>
 
+        <div class="row">
+            <div class="carousel__button col-lg-3 offset-lg-9">
+                <button class="carousel__button__prev"> < </button>
+                <button class="carousel__button__next"> > </button>
+            </div>
+        </div>
+
+
     </section>
 </section>
 
@@ -102,7 +108,7 @@
                 <h2 class="col-lg-10 offset-lg-1">ALLA SCOPERTA <br> DELLA STORIA</h2>
             </div>
             <div class="row">
-                <a href="" class="btn offset-lg-1">
+                <a href="<?php echo get_permalink( get_page_by_path( 'informazioni' ) ); ?>" class="btn offset-lg-1">
                     <button>Territorio</button>
                 </a>
             </div>
@@ -113,7 +119,7 @@
 <section class="banner2"> <!-- blocco 2-->
     <div class="row">
         <div class="col-12 col-lg-6 image">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/picture/banner2.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/picture/banner2.png" alt="" class="banner__img">
         </div>
 
         <div class="col-12 col-lg-5 offset-lg-1">
@@ -121,7 +127,7 @@
                 <h2 class="col">IL PROGETTO <br>WILDTRACK</h2>
             </div>
             <div class="row">
-                <a href="" class="btn">
+                <a href="<?php echo get_permalink( get_page_by_path( 'informazioni' ) ); ?>" class="btn">
                     <button>Informazioni</button>
                 </a>
             </div>
@@ -133,10 +139,10 @@
     <div class="row">
         <div class="col-12 col-lg-6 offset-lg-1">
             <div class="row">
-                <h2 class="col-12 col-lg-9">PERCHè scegliere <br>Un AMMT?</h2>
+                <h2 class="col-12 col-lg-9">PERCHè scegliere <br>Un AMM?</h2>
             </div>
             <div class="row">
-                <a href="" class="btn">
+                <a href="<?php echo get_permalink( get_page_by_path( 'escursioni' ) ); ?>" class="btn">
                     <button>Escursioni</button>
                 </a>
             </div>
@@ -160,7 +166,7 @@
                 </div>
 
                 <div class="btn">
-                    <a href="">
+                    <a href="<?php echo get_permalink( get_page_by_path( 'informazioni' ) ); ?>">
                         <button>Escursioni</button>
                     </a>
                 </div>

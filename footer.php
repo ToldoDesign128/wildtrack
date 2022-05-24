@@ -4,23 +4,23 @@
         <div class="cover">
         </div>
 
-        <div class="cta row justify-content-between">
+        <div class="cta row">
             <h2 class="col-lg-8"> Vuoi sapere di più?</h2>
-            <a href="" class="col-lg-2">
+            <a href="" class="col-lg-2 offset-lg-1">
                 <button> Contatti </button>
             </a>
         </div>
     </section>
 
     <div class="contact container-fluid">
-        <div class="contenuti row justify-content-between align-items-center">
-            <a href="" class="col-12 col-12 col-lg-2">
+        <div class="contenuti row">
+            <a href="<?php echo get_permalink( get_page_by_path( 'contatti' ) ); ?>" class="col-6 order-1 col-lg-2 order-lg-1">
                 <div>
                     <img src="<?php echo get_template_directory_uri(); ?>\img\logo\logo-footer.png" alt="">
                 </div>
             </a>
 
-            <a href="" class="social col-2 offset-0 offset-lg-1 col-lg-2">
+            <a href="" class="social col-2 offset-0 order-3 col-lg-1 offset-lg-1 order-lg-2">
                 <div>
                     <svg id="Componente_160_1" data-name="Componente 160 – 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
                         <defs>
@@ -37,16 +37,19 @@
                 </div>
             </a>
 
-            <div class="contatti col-10 col-lg-4">
+            <div class="contatti col-8 offset-0 order-4 col-lg-3 order-lg-3">
                 <a href="tel:3473411518" target="_blank"> <p>Matteo +39 347 3411518</p></a>
-                <br>
                 <a href="mailto:wildtrackvalsugana@gmail.com" target="_blank"> <p>wildtrackvalsugana@gmail.com</p></a>
             </div>
 
-            <div class="link col-12 col-lg-3">
-                <a href=""> <h6> Privacy & Cookies </h6>  </a>
-                <br>
+            <div class="link col-4 offset-0 order-5 col-lg-2 order-lg-4">
+                <a href="<?php echo get_permalink( get_page_by_path( 'privacy' ) ); ?>"> <h6> Privacy & Cookies </h6>  </a>
                 <a href="" target="_blank"> <h6> 2022 credits </h6> </a>
+            </div>
+
+            <div class="link col-4 order-2 col-lg-1 offset-lg-1 order-lg-5">
+                <a href="" > <h5> ITA </h5>  </a>
+                <a href="" target="_blank"> <h5> ENG</h5> </a>
             </div>
         </div>
     </div>

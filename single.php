@@ -45,7 +45,7 @@
                     <h2 class="col-lg-10 offset-lg-1">SEI DEI <br>NOSTRI</h2>
                 </div>
                 <div class="row">
-                    <a href="" class="btn offset-lg-1">
+                    <a href="<?php echo get_permalink( get_page_by_path( 'contatti' ) ); ?>" class="btn offset-lg-1">
                         <button>Partecipa</button>
                     </a>
                 </div>

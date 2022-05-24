@@ -32,7 +32,7 @@
             <div class="row">
                 <div class="btn offset-lg-1 col-lg-4">
                     <a href="">
-                        <button> AMMT</button>
+                        <button> AMM</button>
                     </a>
                 </div>
             </div>
