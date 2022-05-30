@@ -23,7 +23,7 @@
         </div>
 
         <div class="hero-content">
-            <?php the_content(); ?>
+                <?php the_content(); ?>
         </div>        
     </article>
 
@@ -42,7 +42,7 @@
 
             <div class="col-12 col-lg-6">
                 <div class="row">
-                    <h2 class="col-lg-10 offset-lg-1">SEI DEI <br>NOSTRI</h2>
+                    <h2 class="col-lg-10 offset-lg-1">SEI DEI <br>NOSTRI?</h2>
                 </div>
                 <div class="row">
                     <a href="<?php echo get_permalink( get_page_by_path( 'contatti' ) ); ?>" class="btn offset-lg-1">
@@ -53,19 +53,18 @@
         </div>
     </section>
 
-        <!-- Single carousel -->
+    <!-- Single carousel -->
     <section class="carousel">
         <div class="container-fluid">
-            <div class="row align-items-center justify-content-between">
+            <div class="row align-items-center">
                 <h2 class=" col-12 col-lg-8 offset-lg-1">TUTTE LE PROPOSTE <br>DA PERCORRERE assiemE</h2>
-                <a href="" class="col-6 col-lg-2 ">
+                <a href="<?php echo get_permalink( get_page_by_path( 'escursioni' ) ); ?>" class="col-6 col-lg-2 ">
                     <button>Escursioni</button>
                 </a>
             </div>
         </div>
 
         <section class="cards">
-
             <div class="row cards__slider">
 
                 <?php 
@@ -74,10 +73,9 @@
                         'post_status'       => 'publish',
                         'orderby'           => 'count',
                         'order'             => 'DESC',
-                        'posts_per_page'    => 3
                     ) );
                     if ($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
-                        <article class="col-10 col-lg-4">  
+                        <article class="col-12 col-lg-4">  
                             <a href="<?php the_permalink();?>" class="">    
                                 <div class="card">              
                                     <div class="image">
@@ -99,6 +97,14 @@
                 <?php endif; ?>
 
             </div>
+
+            <div class="row">
+                <div class="carousel__button col-lg-3 offset-lg-9">
+                    <button class="carousel__button__prev"> < </button>
+                    <button class="carousel__button__next"> > </button>
+                </div>
+            </div>
+
 
         </section>
     </section>

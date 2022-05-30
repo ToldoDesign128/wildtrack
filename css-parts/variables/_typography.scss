@@ -4,7 +4,7 @@ $font-family-text: 'Source Sans Pro', sans-serif;
 
 h1, h2, h3{font-family: $font-family-primary;}
 li, ol, ul, button, a{font-family: $font-family-secondary;}
-h4, h5, h6, p{font-family: $font-family-text;}
+h4, h5, h6, p, td, tr{font-family: $font-family-text;}
 
 h1,h2,h3{
     font-weight: 700;

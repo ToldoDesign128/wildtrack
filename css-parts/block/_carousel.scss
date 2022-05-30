@@ -92,7 +92,7 @@
     .carousel{
         height: 80rem;
         margin-top: 5rem;
-        padding: 0 3rem;
+        padding: 0 2rem;
 
         h2{
             margin-bottom: 3rem;
@@ -107,8 +107,10 @@
                     margin-left: 0;
                 }    
                 .card{    
-                    .image{    
+                    .image{ 
+                        max-height: 60%;   
                         img{
+                            height: 30rem;
                             object-fit: cover;
                         }
                     }

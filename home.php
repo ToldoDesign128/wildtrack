@@ -70,7 +70,7 @@
                                         <h4 class=""><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
                                         <div class="text-content">
                                             <p class=""><?php echo get_the_excerpt(); ?></p>
-                                            <a class="read-more" href="<?php the_permalink();?>">Read more...</a>
+                                            <a class="read-more" href="<?php the_permalink()?>">Read more...</a>
                                         </div>
                                     </div>
                                 </div>     

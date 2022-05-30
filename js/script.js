@@ -20,8 +20,6 @@ jQuery(document).ready(function(){
             jQuery('#menu').removeClass('hide'); 
             jQuery('#ham').removeClass('show');
         });
-
-
     };
 
     if(window.innerWidth < 768){
@@ -40,7 +38,8 @@ jQuery(document).ready(function(){
         jQueryhamburger.on("click", function(e) {
             jQueryhamburger.toggleClass("is-active");
         });
-
     };
 });
+
+
 

@@ -39,6 +39,9 @@
                 border: 0;    
             }
         }
+        .wp-block-image{
+            width: 80%;
+        }
         figure{
             background-color: $color-txt-secondary;
             margin-top: 5rem;
@@ -52,8 +55,37 @@
             padding: 0;
             width: 100vw;
         }
-    }
+        .bg__orange{
+            background: $color-txt-secondary;
+            margin: 0;
+            padding-left: 8.33%;
+            padding-right: 3rem;
 
+            figure{
+                margin-top: 10rem;
+                margin-bottom: 10rem;
+                padding: 0;
+
+                td{
+                    padding: 1rem;
+                    color: $color-white;
+                    font-size: 2rem;
+                }
+            }
+        }
+        .legenda{
+            table{
+                tbody{
+                    tr{
+                        td{
+                            font-size: 1.2rem;
+                            padding: 0.2rem 0 0 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .banner1{
         margin-top: -0.3rem;
     }
@@ -71,6 +103,37 @@
             svg{
                 display: none;
             }    
-        }    
+        } 
+        .hero-content{
+           .wp-block-image{
+                width: 100%;
+                -ms-flex-order: 1;
+            }
+        }        
+        .wp-block-buttons{
+            .wp-block-button{
+                text-align: left;
+                .wp-block-button__link{
+                    margin-left: 0;
+                    margin-top: 2rem;
+                }
+            }
+            .wp-block-columns{
+                a{
+                    margin-left: 0;
+                }
+            }
+        }
+        .legenda{
+            td{
+                min-width: 5rem !important;
+                padding: 1rem 0 !important;
+            }
+        }
+        .wp-container-6{
+            .wp-block-table{
+                margin-top: 0 !important;
+            }
+        }
     }
 }

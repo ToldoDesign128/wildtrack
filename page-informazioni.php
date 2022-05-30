@@ -48,7 +48,7 @@
         <div class="row">
 
             <div class="col-12 offset-lg-1 col-lg-5 order-2 order-lg-1">
-                <img src="<?php echo get_template_directory_uri(); ?>\img\picture\banner.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>\img\picture\matteo.JPG" alt="">
             </div>
 
             <div class="col-12 col-lg-6 order-1 order-lg-2">
