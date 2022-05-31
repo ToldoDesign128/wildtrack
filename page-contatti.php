@@ -22,8 +22,7 @@
 <!-- Form -->
 <section class="form">
     <div class="container-fluid">
-        <!-- CF7 Shortcode -->
-        
+        <?php echo do_shortcode( '[contact-form-7 id="112" title="Form di contatto"]' ); ?>        
     </div>
 </section>
 

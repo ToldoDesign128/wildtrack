@@ -64,17 +64,18 @@
             </div>
         </div>
 
-        <section class="cards">
-            <div class="row cards__slider">
+    <section class="cards swiper mySwiper">
+        <div class="row cards__slider swiper-wrapper">
 
-                <?php 
-                    $loop = new WP_Query( array( 
-                        'post_type'         => 'post',
-                        'post_status'       => 'publish',
-                        'orderby'           => 'count',
-                        'order'             => 'DESC',
-                    ) );
-                    if ($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
+            <?php 
+                $loop = new WP_Query( array( 
+                    'post_type'         => 'post',
+                    'post_status'       => 'publish',
+                    'orderby'           => 'count',
+                    'order'             => 'DESC',
+                ) );
+                if ($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
+                    <div class="swiper-slide">
                         <article class="col-12 col-lg-4">  
                             <a href="<?php the_permalink();?>" class="">    
                                 <div class="card">              
@@ -91,22 +92,23 @@
                                 </div>     
                             </a>
                         </article>
-                        <?php endwhile; ?>
-                    <?php else : ?>
-                        <p> <?php esc_html_e( 'Sorry ma non ci sono post che corrispondono a questo criterio', 'slug-theme' ); ?> </p>
-                <?php endif; ?>
+                    </div>
+                    <?php endwhile; ?>
+                <?php else : ?>
+                    <p> <?php esc_html_e( 'Sorry ma non ci sono post che corrispondono a questo criterio', 'slug-theme' ); ?> </p>
+            <?php endif; ?>
 
+        </div>
+
+        <div class="row">
+            <div class="carousel__button col-lg-3 offset-lg-9">
+                <button class="swiper-button-prev"> < </button>
+                <button class="swiper-button-next"> > </button>
             </div>
-
-            <div class="row">
-                <div class="carousel__button col-lg-3 offset-lg-9">
-                    <button class="carousel__button__prev"> < </button>
-                    <button class="carousel__button__next"> > </button>
-                </div>
-            </div>
+        </div>
 
 
-        </section>
+    </section>
     </section>
     
 </main>

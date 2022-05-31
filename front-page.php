@@ -23,17 +23,24 @@
     <div class="shadow">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-8 offset-lg-1">
-                    <h2>PIZZO ALTO <br>E MALGA CASAPINELLO</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="btn offset-lg-1">
-                    <a href="#">
-                        <button> Scopri</button>
-                    </a>
-                </div>
-            </div>
+            <?php $sticky = get_option( 'sticky_posts' );
+                    rsort( $sticky );
+                    $args = array(
+                        'post__in' => $sticky,
+                        'posts_per_page' => 1
+                    );
+                    $sticky_query = new WP_Query( $args );
+                    while ( $sticky_query->have_posts() ) : $sticky_query->the_post(); ?>
+
+                            <div class="col-12 col-lg-8 offset-lg-1">
+                                <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+                                <a href="<?php the_permalink(); ?>"><button> Scopri </button></a>
+                            </div>
+
+                    <?php endwhile;
+                    wp_reset_postdata();
+                ?>
+            </div>            
         </div>
     </div>
 
