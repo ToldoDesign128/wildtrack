@@ -50,8 +50,8 @@
         </div>
     </div>
 
-    <section class="cards">
-        <div class="row cards__slider">
+    <section class="cards swiper mySwiper">
+        <div class="row cards__slider swiper-wrapper">
 
             <?php 
                 $loop = new WP_Query( array( 
@@ -61,22 +61,24 @@
                     'order'             => 'DESC',
                 ) );
                 if ($loop->have_posts()) : while($loop->have_posts()) : $loop->the_post(); ?>
-                    <article class="col-12 col-lg-4">  
-                        <a href="<?php the_permalink();?>" class="">    
-                            <div class="card">              
-                                <div class="image">
-                                    <img src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php echo $thumbnail_alt ?>">
-                                </div>
-                                <div class="text">                                
-                                    <h4 class=""><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
-                                    <div class="text-content">
-                                        <p class=""><?php echo get_the_excerpt(); ?></p>
-                                        <a class="read-more" href="<?php the_permalink();?>">Read more...</a>
+                    <div class="swiper-slide">
+                        <article class="col-12 col-lg-4">  
+                            <a href="<?php the_permalink();?>" class="">    
+                                <div class="card">              
+                                    <div class="image">
+                                        <img src="<?php echo get_the_post_thumbnail_url();?>" alt="<?php echo $thumbnail_alt ?>">
                                     </div>
-                                </div>
-                            </div>     
-                        </a>
-                    </article>
+                                    <div class="text">                                
+                                        <h4 class=""><a href="<?php the_permalink();?>"><?php the_title(); ?></a></h4>
+                                        <div class="text-content">
+                                            <p class=""><?php echo get_the_excerpt(); ?></p>
+                                            <a class="read-more" href="<?php the_permalink();?>">Read more...</a>
+                                        </div>
+                                    </div>
+                                </div>     
+                            </a>
+                        </article>
+                    </div>
                     <?php endwhile; ?>
                 <?php else : ?>
                     <p> <?php esc_html_e( 'Sorry ma non ci sono post che corrispondono a questo criterio', 'slug-theme' ); ?> </p>
@@ -86,8 +88,8 @@
 
         <div class="row">
             <div class="carousel__button col-lg-3 offset-lg-9">
-                <button class="carousel__button__prev"> < </button>
-                <button class="carousel__button__next"> > </button>
+                <button class="swiper-button-prev"> < </button>
+                <button class="swiper-button-next"> > </button>
             </div>
         </div>
 

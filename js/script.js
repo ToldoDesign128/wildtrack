@@ -20,6 +20,18 @@ jQuery(document).ready(function(){
             jQuery('#menu').removeClass('hide'); 
             jQuery('#ham').removeClass('show');
         });
+
+        //swiper carousel
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
     };
 
     if(window.innerWidth < 768){
@@ -38,8 +50,19 @@ jQuery(document).ready(function(){
         jQueryhamburger.on("click", function(e) {
             jQueryhamburger.toggleClass("is-active");
         });
+
+        //swiper carousel
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
     };
 });
-
 
 
