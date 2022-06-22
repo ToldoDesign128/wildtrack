@@ -5,9 +5,12 @@
         margin: 0;
     }
     .hero-single{
-        background-color: $color-grey;
+        background-color: rgb(180, 180, 180);
         height: 90vh;
-
+        background-repeat: no-repeat; 
+        background-size: cover;
+        background-blend-mode: multiply;
+        
         h1{
             color: $color-white;
             padding: 35rem 0 5rem 0;
@@ -15,6 +18,13 @@
     }
     .hero-content{
 
+        p{
+            a{
+                color: $color-txt-secondary;
+                font-family: $font-family-text;
+                margin: 0 !important;
+            }
+        }
         .wp-block-columns{
             margin-left: 8.333%;
             margin-right: 3rem;
@@ -48,6 +58,9 @@
             margin-bottom: 0;
             padding: 8.333%;
 
+            .logo_single{
+                background-color: rgba($color: $color-sfondo, $alpha: 0);
+            }
         }
         iframe{
             margin: 0;
@@ -70,6 +83,17 @@
                     padding: 1rem;
                     color: $color-white;
                     font-size: 2rem;
+
+                    a{
+                        color: $color-white;
+                        font-family: $font-family-text;
+                        margin: 0 !important;
+                        text-decoration: solid !important;
+                    }
+                }
+
+                .extra{
+                    margin: 5rem 0 !important;
                 }
             }
         }
@@ -78,18 +102,61 @@
                 tbody{
                     tr{
                         td{
-                            font-size: 1.2rem;
+                            font-size: 1.4rem;
+                            font-weight: 300;
                             padding: 0.2rem 0 0 2rem;
                         }
                     }
                 }
             }
         }
+        .wp-block-button__link{
+            padding: 1.6rem 3.2rem;
+            border: 0;
+            cursor: pointer;
+            color: $color-white;
+            background-color: $color-black;
+            transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
+
+            &:hover{
+                background-color: $color-txt-secondary;
+            }
+        }
+        figcaption{
+            color: $color-white;
+            font-family: $font-family-text;
+            font-size: 2rem;
+            padding: 1rem;
+            padding-top: 3rem;
+        }
+        .logo_single{
+            text-align: left;
+            background-color: $color-sfondo;
+        }
     }
     .banner1{
         margin-top: -0.3rem;
     }
 }
+
+@media (max-width:999px){
+    .single{
+
+        .hero-single{
+            height: 80vh;
+
+            h1{
+                padding: 35rem 4rem 5rem 4rem;
+            }
+            .parentesi{
+                margin-left: 4rem;
+            }   
+        } 
+    }        
+        .wp-container-7{
+            padding-top: 3rem;
+        }
+    }
 
 @media (max-width:768px){
     .single{
@@ -100,7 +167,7 @@
             h1{
                 padding: 35rem 2rem 5rem 2rem;
             }
-            svg{
+            .parentesi{
                 display: none;
             }    
         } 

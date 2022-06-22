@@ -1,3 +1,20 @@
+.hero-page{
+    h4{
+        margin-bottom: 2rem;
+    }
+    li{
+        text-transform: none;
+        font-weight: 800;
+        margin-left: 15px;
+        color: $color-black;
+        font-family: $font-family-text;
+        list-style-type: disc;
+
+        &:last-child{
+            margin-bottom: 5rem;
+        }
+    }
+}
 .content{
     padding-top: 10rem;
     padding-bottom: 10rem;
@@ -8,6 +25,7 @@
         color: $color-txt-secondary;
         margin-bottom: 5rem;
         font-weight: 900;
+        font-size: 4.8rem;
     }
     p{
         color: $color-black;
@@ -15,31 +33,50 @@
         padding: 0 15px;
     }
     img{
-        object-fit: contain;
         height: 100%;
+        width: auto;
         max-width: 100%;
+        object-fit: cover;
     }
-    svg{
-        margin-top: 0;
+    a{
+        width: 100%;
+        height: 100%;
+    }
+    .sponsor{
+        height: 70%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:999px){
+    .hero-page{
+        padding: 0 4rem;
+    }
+    .content{
+        padding: 0 4rem;
     }
 }
 
 @media (max-width:768px) {
+    .hero-page{
+        padding: 0;
+    }
 
     .content{
-        padding-top: 6rem;
-        padding-bottom: 6rem;    
+        padding: 6rem 0;  
+         
         .banner{
             padding: 5rem 2rem;
         }    
         h2{
             margin-bottom: 3rem;
+            font-size: 2.8rem;
         }    
         p{
             padding: 0 15px;
             margin-bottom: 0;
         }  
-        svg{
+        .sponsor{
             margin-top: 3rem;
         }  
         img{

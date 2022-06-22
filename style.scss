@@ -20,6 +20,14 @@ Version: v1.0
 @import "css-parts/media-query";
 @import "css-parts/local-font";
 
+//Block
+@import "css-parts/block/component";
+@import "css-parts/block/poster";
+@import "css-parts/block/carousel";
+@import "css-parts/block/banner";
+@import "css-parts/block/hero-page";
+@import "css-parts/block/helpers";
+
 //Page
 @import "css-parts/page/nav";
 @import "css-parts/page/footer";
@@ -28,14 +36,6 @@ Version: v1.0
 @import "css-parts/page/escursioni";
 @import "css-parts/page/info";
 @import "css-parts/page/single";
-
-//Block
-@import "css-parts/block/component";
-@import "css-parts/block/poster";
-@import "css-parts/block/carousel";
-@import "css-parts/block/banner";
-@import "css-parts/block/hero-page";
-@import "css-parts/block/helpers";
 
 
 

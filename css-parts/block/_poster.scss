@@ -1,5 +1,5 @@
 .poster{
-    height: 40rem;
+    height: 100%;
     margin: 0;
     background-color: $color-black;
     background-image: url(img/picture/poster.png);
@@ -24,6 +24,7 @@
             margin-bottom: 5rem;
         }    
         button{
+            margin-bottom: 8rem;
             color: $color-white;
             background-color: $color-sfondo;
             transition: 0.4s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -35,10 +36,16 @@
     }
 }
 
+@media (max-width:999px){
+    .shadow{
+        padding: 0 4rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     .poster{
-        height: 35vh;
+        height: 100%;
 
         .shadow{
             padding: 6rem 2rem;
@@ -49,6 +56,9 @@
             h2{
                 color: $color-white;
                 margin-bottom: 2rem;
+            }
+            button{
+                margin-bottom: 0;
             }
         }
     }    

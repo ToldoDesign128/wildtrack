@@ -33,6 +33,8 @@ add_action( 'wp_enqueue_scripts', 'Wild_styles' );
 function Wild_scripts() {
     /*Flickity JS */
     wp_enqueue_script("Swiper-scriptjs", get_template_directory_uri().'/js/swiper.min.js', array(), null, false);
+    /*GSAP JS */
+    wp_enqueue_script("Gsap-scriptjs", get_template_directory_uri().'/js/gsap.min.js', array(), null, false);
     /*My JS */
     wp_enqueue_script("My-scriptjs", get_template_directory_uri().'/js/script.js', array("jquery"), null, true);
 }

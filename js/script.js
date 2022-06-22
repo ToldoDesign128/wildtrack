@@ -20,18 +20,6 @@ jQuery(document).ready(function(){
             jQuery('#menu').removeClass('hide'); 
             jQuery('#ham').removeClass('show');
         });
-
-        //swiper carousel
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
     };
 
     if(window.innerWidth < 768){
@@ -50,10 +38,13 @@ jQuery(document).ready(function(){
         jQueryhamburger.on("click", function(e) {
             jQueryhamburger.toggleClass("is-active");
         });
+    };
+});
+
 
         //swiper carousel
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
+            slidesPerView: 3,
             spaceBetween: 30,
             loop: true,
             loopFillGroupWithBlank: true,
@@ -61,8 +52,23 @@ jQuery(document).ready(function(){
               nextEl: ".swiper-button-next",
               prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                100: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                1024: {
+                  slidesPerView: 3,
+                  spaceBetween: 50,
+                },
+            },
           });
-    };
-});
+
+
+// GSAP Animation
 
 

@@ -48,9 +48,7 @@ footer{
                 .social{
                     margin: 0;
                     padding: 1rem 0;
-                }
-                .contatti{
-                    padding: 0;
+                    height: 5rem;
                 }
                 p{
                     color: $color-white;
@@ -78,6 +76,17 @@ footer{
                     height: 1rem;
                 }
             }
+            .social-logo{
+                height: 5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:999px){
+    .cta{
+        h2{
+            margin-bottom: 2rem;
         }
     }
 }
@@ -93,6 +102,7 @@ footer{
             height: 20rem ;    
             h2{
                 padding: 4rem 0 3rem 0;
+                margin-bottom: 0;
             }    
             a{
                 padding: 0;    
@@ -114,7 +124,6 @@ footer{
                         height: 5rem;
                         object-fit: contain;
                         margin:1rem 0 5rem 0;
-                        padding: 0 15px 0 15px;
                     } 
                     p{
                         font-size: 1.4rem;
@@ -122,16 +131,11 @@ footer{
                     h6{
                         font-size: 1rem;
                     }                    
-                    svg{
-                        height: 5rem;
-                        margin-top: 1rem;
-                    }
                     .social{
                         margin: 0;
+                        height: 5rem;
+                        margin-top: 1rem;
                     }    
-                    .contatti{
-                        padding: 0;
-                    }
                     h5{
                         margin-top: 1rem;
                     }
